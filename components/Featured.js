@@ -4,11 +4,6 @@ import Image from "next/image";
 import images from '../data/images';
 
 const Featured = () => {
-   console.log(images);
-
-   const handleAddToCart = (email, product_name) => {
-   }
-
    return (
       <div className="w-full p-2 flex items-center py-16">
          <div className="mt-5 max-w-[1240px] m-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8">
@@ -29,10 +24,7 @@ const Featured = () => {
                            </div>
                         </div>
                         <div className='bg-[#29215e] text-center sm:text-sm text-sm w-full pt-2 pb-2 uppercase tracking-wide text-[#efdded]'>
-                           <Link href="" onClick={(e) => {
-                              e.preventDefault();
-                              handleAddToCart(session.user.email, image.title);
-                           }}>Add to Cart</Link>
+                           <Link href="">Add to Cart</Link>
                         </div>
 
                      </div>

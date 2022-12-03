@@ -1,33 +1,41 @@
 [
   {
+    "id": "product1",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product2",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product3",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product4",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product5",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"    
   },
   {
+    "id": "product6",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product7",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   },
   {
+    "id": "product8",
     "title": "product9_65.00",
     "link": "https://res.cloudinary.com/bowenivan/image/upload/v1668315868/herbeauty/product9_65.00.jpg"
   }
