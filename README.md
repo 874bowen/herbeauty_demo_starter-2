@@ -3,7 +3,7 @@
 ### 🎈Quick Start
 
 ```bash
-yarn create next-app -e https://github.com/874bowen/herbeauty_starter
+yarn create next-app -e https://github.com/874bowen/herbeauty_demo_starter
 # or
-npx create-next-app -e https://github.com/874bowen/herbeauty_starter
+npx create-next-app -e https://github.com/874bowen/herbeauty_demo_starter
 ```
