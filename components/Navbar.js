@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import logo from "../public/assets/hb_logo.png";
-
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 const Navbar = () => {
-
-	let name = "John";
-	let email = "johndoe@gmail.com";
-	
+	const { data: session } = useSession();
+	let name = "";
+	let email = "";
+	if (session) {
+		email = session.user.email
+		name = session.user.name.split(" ")[0]
+	}
 	let [number, setNumber] = useState(0);
 
 
@@ -23,20 +26,19 @@ const Navbar = () => {
 				/>
 				<div>
 					<ul className="items-center xs:gap-1 gap-3 flex">
-
-						<Link href="/">
-							<li className="ml-10 text-sm uppercase hover:border-b">
-								<p className="hidden md:block mr-6">Welcome, {name}!</p>
-							</li>
-						</Link>
-						
+						{(session) &&
 							<>
+								<Link href="/">
+									<li className="ml-10 text-sm uppercase hover:border-b">
+										<p className="hidden md:block mr-6">Welcome, {name}!</p>
+									</li>
+								</Link>
 								<Link href="/cart">
 									<button className="xs:p-0 text-sm">Cart {number}</button>
 								</Link>
 								<Link href="/" >
 									<Image
-										src={logo}
+										src={session.user.image}
 										alt="/"
 										width="40"
 										height="40"
@@ -44,12 +46,11 @@ const Navbar = () => {
 									/>
 								</Link>
 							</>
-						
-
-						{/* <Link href="/" onClick={signIn}>{(!session) &&
+						}
+						<Link href="/" onClick={signIn}>{(!session) &&
 							<button>Login</button>
 						}
-						</Link> */}
+						</Link>
 					</ul>
 				</div>
 			</div>
